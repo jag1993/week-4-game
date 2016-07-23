@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="knight">KNIGHT</button>
+<button id="enemy1">ENEMY1</button>
+<button id="enemy2">ENEMY2</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<p id="enemylife"></p>
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+
+startGame();
+function startGame(){
+var finalfantasy = {
+
+	 knight:{
+		HP:1500,
+        DMG:50,
+        	},
+	 enemy1:{
+		HP:1250,
+		DMG:150,
+			},
+	enemy2:{
+		HP:1150,
+		DMG:50,
+			},
+	enemy3:{
+		HP:1250,
+		DMG:50,
+			}
+	
+
+}
+
+
+
+$("#knight").on("click",function knight(event){
+	// Damages enemy1 by subtracting knight's dmg value to enemy1HP
+	 finalfantasy.knight["DMG"] += 50; 
+	 finalfantasy.enemy1["HP"] -= finalfantasy.knight["DMG"];
+       	console.log("Enemy1HP:" + finalfantasy.enemy1.HP);
+      
+    // Damages knight HP if you attack enemy
+     finalfantasy.knight["HP"] -= finalfantasy.enemy1["DMG"];
+       	console.log("KNIGHT HP:" + finalfantasy.knight.HP);
+    	
+     // If HP of enemy 1 is  less than or equal to 0 kill enemy 2
+     if(finalfantasy.enemy1.HP  <= 0){
+
+	// Damages enemy1 by subtracting knight's dmg value to enemy1HP
+    	finalfantasy.enemy2["HP"] -= finalfantasy.knight["DMG"];
+    	console.log("Enemy2HP:" + finalfantasy.enemy2.HP) 	
+     // Damages knight HP if you attack enemy
+     	finalfantasy.knight["HP"] -= finalfantasy.enemy2["DMG"];
+       	console.log("KNIGHT HP:" + finalfantasy.knight.HP);
+     }
+
+      // If your HP is less than or equal to 0 you die
+     if(finalfantasy.knight.HP <= 0){
+     	console.log("You Dieded");
+     }
+
+     if(finalfantasy.enemy2.HP <= 0){
+     	console.log("You Win")
+     }
+
+    });
+
+
+
+
+}
+// WELCOME TO FINAL FANTASY DISSIDIA WHERE RANDOM FINAL FANTASY CHARACTERS FIGHT GRATUITOUSLY TO THE DEATH
+// HOW TO MAKE THIS DYNAMIC
+// HOW TO MAKE THIS WITH JQUERY
+// HOW TO MAKE IT SO YOU JUST WRITE A FEW LINES OF CODE THAT WOULD COVER ALL CHARACTERS
+// TRY AND USE THE THIS KEYWORD
+
+
+
+
+});
+
+
+
+
+
+</script>
+</html>
