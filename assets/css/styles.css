@@ -1,0 +1,36 @@
+body{
+	background-image: url(../images/space.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color:white !IMPORTANT;
+}
+
+.crystalguess{
+	height:50px;
+	width:100px;
+	position: relative;
+	left:15%;
+	margin:50px;
+}
+
+#spacemoon{
+	height:300px;
+	width:300px;
+}
+
+#moon{
+	height:300px;
+	width:300px;
+	position: relative;
+}
+
+.container{
+	margin:0 auto;
+}
+.crystals{
+	margin:0 auto;
+}
+
+h2,h4{
+	text-align: center;
+}
