@@ -2,7 +2,6 @@
 ## Working Link: https://stark-brook-27933.herokuapp.com/
 
 ## Parks and Rec Trivia Game
-  >Welcome to my Parks and Rec Trivia Game
   > ![week4gamr](https://cloud.githubusercontent.com/assets/18745344/20451247/11c11be8-adac-11e6-8b15-8f985cd9530d.gif)
   
 ## Instructions
