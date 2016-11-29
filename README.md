@@ -9,7 +9,7 @@
   > 1. A user must try and match the number in the screen by clicking the crystals below it
   > 2. Each crystal has different randomly assigned values and clicking those values will add to the sum you have to match
 
-## Languages Used
+## Technologies Used
   > 1. HTML
   > 2. CSS
   > 3. JavaScript and jQuery
